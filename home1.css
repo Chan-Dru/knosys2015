@@ -33,9 +33,6 @@ div{
 .col-xs-12,.col-xs-11,.col-xs-10,.col-xs-9,.col-xs-8,.col-xs-7,.col-xs-6,.col-xs-5,.col-xs-4,.col-xs-3,.col-xs-2,.col-xs-1{
   transition:all 1s ease-in;
 }
-.col-lg-push-3,.col-lg-push-1{
-  transition:all 1s ease-in;
-}
 
 #fake1,#fake2,#fake3{
   border:0px solid red;
@@ -53,30 +50,7 @@ div{
   height:50px;
   transition:all 1s ease-in;
 }
-.n1{
-  width:92%;
-  transition:all 1s ease-in;
-}
-.n1-img{
-  width:90%;
-  opacity:0.5;
-  height:40px;
-}
-.n2{
-  width:84%;
-}
-.n2-img{
-  width:80%;
-  opacity:0.3;
-  height:30px;
-}
-/*#knosys-img:hover{
-  border:0px solid green;
-  background-color: green;
-  /*border-radius:50px;*/
-/*#knosys-img:{
-  background-color: green;
-}*/
+
 #knosys-img{
   background-color:;
   float:right;
@@ -105,37 +79,7 @@ div{
 #event-sub,#first-node,#workshop-sub,#coding-sub,#gaming-sub,#brain-sub,#online-sub{
   display:none;
 }
-.k1{
-  width:70%;
-}
-.k1img{
-  width:50%;
-  opacity:;
-}
-.k2{
-  width:65%;
-}
-.k2img{
-  width:40%;
-  opacity:0.5;
-}
-.k3{
-  width:59%;
-}
-.k3img{
-  width:25%;
-  opacity:0.3;
-}
-.large{
-  width:24%;
-  opacity:;
-}
-/*.medium{
-  width:22.9%;
-}
-.small{
-  width:20.3%;
-}*/
+
 .col-lg-3,.col-md-3,.col-sm-3{
   width:24%;
 }
@@ -143,26 +87,15 @@ div{
 .col-lg-4,.col-md-4,.col-sm-4,.col-xs-4{
   width:30.5%;
 }
-/*.col-xs-3{
-  width:23%;
-}*/
-.medium{
-  width:21.65%;
-  opacity:.5;
-}
-.small{
-  width:18.8%;
-  opacity:0.3;
-}
+
+
 #heading{
   margin-top:0px;
   height: ;
   background:;
   border:0px solid black;
 }
-.look{
-  background-color: green;
-}
+
 /*#login-body{
     display:block;
     z-index:10;

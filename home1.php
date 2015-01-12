@@ -1,105 +1,28 @@
 <html>
 <head>
 	<title>knosys</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/custom/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="content.css">
   <link rel="stylesheet" href="home1.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
-<body onload="setup();">
+<body onload="setup();" ondragstart="return false;" ondrop="return false;">
   <div id="canvas">
 <canvas id="Canvas2D">
 <canvas>
 </div>
 <div id="body" class="container-fluid">
+  <?php
+include('signupindex.php');
+  ?>
   <div id="heading">
     <img id="headerimg" src="svg/header.png"/>
     
- 
-<div class="modal fade login " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        
-      </div>
-      <div class="modal-body">
-
-         <form role="form">
-  <div class="form-group">
-    <label for="exampleInputEmail1">User Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter userName" required>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-  </div>
-  
-  
-
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary btn-lg" data-dismiss="modal" data-toggle="modal" data-target=".signup">sign up</button>
-        <button type="submit" class="btn btn-success btn-lg" >Submit</button>
-      </div>
-      </form>
-    </div>
-  </div>
-</div>
+ </div>
     
-<div class="modal fade signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">sign up</h4>
-      </div>
-      <div class="modal-body">
-       
-        <form role="form">
-  <div class="form-group">
-    <label for="exampleInputEmail1">User Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter userName" required>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-  </div>
- <!--  <div class="form-group">
-    <label for="exampleInputPassword1">Confirm Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
-  </div> -->
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"required>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">College Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter collegeName"required>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Department</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Department"required>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Phone Number</label>
-    <input type="tel" class="form-control" id="exampleInputEmail1" placeholder="Enter PhoneNumber"required>
-  </div>
 
-
-
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary btn-lg" data-dismiss="modal" data-toggle="modal" data-target=".login">login</button>
-        <button type="submit" class="btn btn-success btn-lg">submit</button>
-      </div>
-      </form>
-    </div>
-  </div>
-</div>
-  </div>
 
     <div id="layer" class="container">
       
@@ -205,9 +128,10 @@
       </div>
     </div>
   </div>
-<script src="js/jquery.min.js"></script>
+
 <script src="home1.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 

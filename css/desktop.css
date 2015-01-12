@@ -75,3 +75,57 @@
   opacity:1;
   margin:0px 3px;
 }
+
+
+
+.n1{
+  width:92%;
+  transition:all 1s ease-in;
+}
+.n1-img{
+  width:90%;
+  opacity:0.5;
+  height:40px;
+}
+.n2{
+  width:84%;
+}
+.n2-img{
+  width:80%;
+  opacity:0.3;
+  height:30px;
+}
+.k1{
+  width:70%;
+}
+.k1img{
+  width:50%;
+  opacity:;
+}
+.k2{
+  width:65%;
+}
+.k2img{
+  width:40%;
+  opacity:0.5;
+}
+.k3{
+  width:59%;
+}
+.k3img{
+  width:25%;
+  opacity:0.3;
+}
+.large{
+  width:24%;
+  opacity:;
+}
+
+.medium{
+  width:21.65%;
+  opacity:.5;
+}
+.small{
+  width:18.8%;
+  opacity:0.3;
+}

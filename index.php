@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>check</title>
+	
+    <title>knosys</title>
      <script type="text/javascript" src="galaxy.js"></script>
 </head>
 <body ondragstart="return false;" ondrop="return false;">
