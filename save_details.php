@@ -31,13 +31,19 @@ if(isset($_POST["page"]) && !empty($_POST["page"]))
 	}
 	else
 	{
-		//Check your database for already existing Username and/or Email address to avoid duplicates and save this info to your database if you wish before you can then display a success message to your users as shown below
-		$mysqli=mysqli_connect('localhost','root','','login') or die("Database Error");
+
+		  define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
+define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
+define('DB_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
+define('DB_PASS',getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+define('DB_NAME',getenv('OPENSHIFT_GEAR_NAME'));
 
 
-		/*$sql="SELECT 'username' FROM 'user'  WHERE username = '$user_name'";
-		$result=mysqli_query($mysqli,$sql)or die(mysqli_error($mysqli));*/
+		
+		$mysqli=mysqli_connect('DB_HOST:DB_PORT','DB_USER','DB_PASS','login') or die("Database Error");
 
+
+		
 
 		$sql1 = "SELECT username FROM user WHERE username='$user_name'";
 		 $result1 = mysqli_query($mysqli,$sql1)or die(mysqli_error());
