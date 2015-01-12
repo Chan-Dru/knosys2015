@@ -9,6 +9,7 @@
 
 
 //Validate the request brought
+try{
 if(isset($_POST["page"]) && !empty($_POST["page"]))
 {
 	$full_name = trim(strip_tags(strtoupper($_POST["fullnames"])));
@@ -31,23 +32,33 @@ if(isset($_POST["page"]) && !empty($_POST["page"]))
 	}
 	else
 	{
-
-		  define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
+		//Check your database for already existing Username and/or Email address to avoid duplicates and save this info to your database if you wish before you can then display a success message to your users as shown below
+define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
 define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
 define('DB_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
 define('DB_PASS',getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
 define('DB_NAME',getenv('OPENSHIFT_GEAR_NAME'));
 
+$dsn = 'mysql:dbname=login;host='.DB_HOST.';port='.DB_PORT;
+$db = new PDO($dsn, DB_USER, DB_PASS);
+
+
+
+
+
+		/*$db=new PDO("mysql:host=localhost;dbname=login",'root','');*/
+		$db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
+
 
 		
-		$mysqli=mysqli_connect('DB_HOST:DB_PORT','DB_USER','DB_PASS','login') or die("Database Error");
 
-
-		
 
 		$sql1 = "SELECT username FROM user WHERE username='$user_name'";
-		 $result1 = mysqli_query($mysqli,$sql1)or die(mysqli_error());
-		 $num_row1 = mysqli_num_rows($result1);
+		 $result1 = $db->query($sql1);
+		 $result2=$result1->fetchAll();
+		 $num_row1=count($result2);
+
+		 //$num_row1 = mysqli_num_rows($result1);
 	
 		 if($num_row1>=1)
 		   {
@@ -57,7 +68,7 @@ define('DB_NAME',getenv('OPENSHIFT_GEAR_NAME'));
 		    {
 
 			$sql2 = "INSERT INTO user (username, email, password, com_code) VALUES ('$user_name', '$email_address', '$password', '$encrypted_password')";
-  			$result2 = mysqli_query($mysqli,$sql2) or die(mysqli_error());
+  			$result2 = $db->exec($sql2); 
 
 
 
@@ -86,5 +97,10 @@ define('DB_NAME',getenv('OPENSHIFT_GEAR_NAME'));
 else
 {
 	echo "<div class='info'>Sorry, the operation was unsuccessful.<br>Please try again or contact this website admin to report this error message if the problem persist. Thanks.</div>";
+}
+}
+catch(PDOException $e)
+{
+	$e->getMessage();
 }
 ?>
