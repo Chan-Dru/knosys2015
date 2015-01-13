@@ -25,8 +25,9 @@ $(document).ready(function(){
     {
      $("#login_form").html('<div class="alert alert-success" >You have  successfully logged in!</div>');
      
+    /* $("#profile").html("<a href='logout.php' id='logout'>Logout</a>");*/
 
-     $('#after_login').html("Hi,"+username+"<a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>");
+     $('#after_login').html('<a href="logout.php" id="logout"><img class="menu-button col-lg-1" src="pins/logout.png"/></a>');
 
     }
     else
@@ -71,19 +72,16 @@ $(document).ready(function(){
 }
 /*.col-lg-1{
   width:9%;
-}*/
+}
 .col-lg-2{
   width:14.5%;
-}
+}*/
 .modal .modal-body{
   max-height:480px;
 }
 .navbar{
   background-color: rgba(0,0,0,0);
   border:0px;
-}
-#after_login{
-  color:white;
 }
 </style>
 
@@ -108,11 +106,9 @@ $(document).ready(function(){
 
 <div  id="profile" class="row">
   <div class="col-lg-2"></div>
-   <?php if(isset($_SESSION['user_id'])){
-  
-    echo "<div id='after_login'><a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>Hi,".$_SESSION['user_name']."</div>";
+   <?php if(isset($_SESSION['user_name'])){
   ?>
-  
+  <a href="logout.php" id="logout"><img class="menu-button col-lg-1" src="pins/logout.png"/></a>
 
 <?php }else {?>
   <div id="after_login">
