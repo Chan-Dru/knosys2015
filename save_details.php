@@ -78,17 +78,7 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
 		?>
        
 	       <div class="alert alert-success" >You have registered successfully and below are your User Name and Password!</div>
-	       
-
-	          
-	        <div class="alert-info alert">
-	        	<label>User Name:<label><?php echo $user_name; ?>
-	        	<label>Password:</label><?php echo $password; ?>
-	        </div>
-	        
-	        
-	        
-	       
+	      
 	        <?php
 	    	
 	    }
