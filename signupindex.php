@@ -233,7 +233,6 @@ $(document).ready(function(){
   <div   class="modal-body">
 <div id="signup_form">
 
-<!-- Code Begins -->
 
 
 <div class="form-group">
