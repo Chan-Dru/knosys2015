@@ -1,7 +1,70 @@
+<?php session_start(); ?>
 <html>
 <head>
 
  <script type="text/javascript">
+
+  function Users_Registration() 
+{
+
+  var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var colg=$("#colg").val();
+
+  var phne=$("#phne").val(); 
+  var fullnames = $("#fullnames").val();
+  var usernames = $("#usernames").val();
+  var emails = $("#emails").val();
+  var passs = $("#passs").val();
+  
+  if(fullnames == "")
+  {
+
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your fullname in the required field to proceed.</div>');
+    $("#fullnames").focus();
+  }
+  else if(usernames == "")
+  {
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your desired username to proceed.</div>');
+    $("#usernames").focus();
+  }
+  else if(emails == "")
+  {
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your email address to proceed.</div>');
+    $("#emails").focus();
+  }
+  else if(reg.test(emails) == false)
+  {
+    $("#signup_status").html('<div class="alert alert-danger">Please enter a valid email address to proceed.</div>');
+    $("#emails").focus();
+  }
+  else if(passs == "")
+  {
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your desired password to go.</div>');
+    $("#passs").focus();
+  }
+  else
+  {
+   
+    var dataString = 'colg='+ colg +'&phne='+ phne +'&fullnames='+ fullnames + '&usernames=' + usernames + '&emails=' + emails + '&passs=' + passs + '&page=signup';
+    $.ajax({
+      type: "POST",
+      url: "save_details.php",
+      data: dataString,
+      cache: false,
+      beforeSend: function() 
+      {
+        $("#signup_status").html('<div style="height:20px;"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px; color:black;">Please wait</font> <img style="height:20px;width:100px;"class="img-thumbnail" src="images/loadings.gif" alt="Loading...." align="center" title="Loading...."/></div><br clear="all">');
+      },
+      success: function(response)
+      {
+          $('#signup_status').hide().fadeIn('slow').html(response);
+          
+    
+      }
+    });
+  }
+}
+
 $(document).ready(function(){
  $("#login_a").click(function(){
   $("#shadow").fadeIn("normal");
@@ -73,11 +136,9 @@ $(document).ready(function(){
   width:9%;
 }*/
 .col-lg-2{
-  width:14.5%;
+  width:10%;
 }
-.modal .modal-body{
-  max-height:480px;
-}
+
 .navbar{
   background-color: rgba(0,0,0,0);
   border:0px;
@@ -89,7 +150,7 @@ $(document).ready(function(){
 
 
 
-<?php session_start(); ?>
+
 
 <nav id="menu" class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -233,6 +294,7 @@ $(document).ready(function(){
   <div   class="modal-body">
 <div id="signup_form">
 
+<!-- Code Begins -->
 
 
 <div class="form-group">
@@ -256,7 +318,14 @@ $(document).ready(function(){
           <input type="text" class="form-control" id="emails" name="emails" placeholder="Enter email"required>
           </div>
 
-
+<div class="form-group">
+          <label >College </label>
+          <input type="text" class="form-control" id="colg" name="colg" placeholder="Enter College Name" required>
+          </div>
+          <div class="form-group">
+          <label >Phone </label>
+          <input type="text" class="form-control" id="phne" name="phne" placeholder="Enter Mobile Number" required>
+          </div>
 
 
 <div class="form-group">
@@ -278,6 +347,6 @@ $(document).ready(function(){
   </div>
 
 
-<script language="javascript" type="text/javascript" src="js/vpb_script.js"></script>  
+
 </body>
 </html>

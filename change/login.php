@@ -3,6 +3,7 @@ try{
  session_start();
  $username = $_POST['name'];
  $password = ($_POST['pwd']);
+ $password = md5($password);
 
 define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
 define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
@@ -19,16 +20,15 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
  
  /*$db=new PDO("mysql:host=localhost;dbname=login",'root','');*/
  $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
- $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+ $sql = "SELECT * FROM user WHERE username='$username' AND com_code='$password'";
  $result =$db->query($sql);
- $result1=$result->fetch();
- $num_row = count($result1);
- $user=$result->fetchColumn(1);
- $id=$result->fetchColumn(0);
- if( $num_row >=1 ) {
+ $result3=$result->fetch();
+
+ 
+ if( $result3!=null) {
   echo 'true';
-  $_SESSION['user_name']=$user;
-  $_SESSION['user_id']=$id;
+  $_SESSION['user_name']=$username;
+  $_SESSION['user_id']=$result3['id'];
  }
  else{
  echo 'false';

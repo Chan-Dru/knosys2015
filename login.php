@@ -3,6 +3,7 @@ try{
  session_start();
  $username = $_POST['name'];
  $password = ($_POST['pwd']);
+ $password =md5($password);
 
 define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
 define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
@@ -16,10 +17,13 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
 
 
 
- 
- /*$db=new PDO("mysql:host=localhost;dbname=login",'root','');*/
+/* 
+ $db=new PDO("mysql:host=localhost;dbname=login",'root','');
  $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
- $sql = "SELECT * FROM user WHERE username='$username' AND password='$password'";
+*/
+
+
+ $sql = "SELECT * FROM regis WHERE user_name='$username' AND com_code='$password'";
  $result =$db->query($sql);
  $result3=$result->fetch();
 

@@ -67,7 +67,7 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
 		 else
 		    {
 
-			$sql2 = "INSERT INTO user (username, email, password, com_code) VALUES ('$user_name', '$email_address', '$password', '$encrypted_password')";
+			$sql2 = "INSERT INTO user (username, email, com_code) VALUES ('$user_name', '$email_address', '$encrypted_password')";
   			$result2 = $db->exec($sql2); 
 
 
@@ -77,18 +77,8 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
 
 		?>
        
-	       <div class="alert alert-success" >You have registered successfully and below are your User Name and Password!</div>
-	       
-
-	          
-	        <div class="alert-info alert">
-	        	<label>User Name:<label><?php echo $user_name; ?>
-	        	<label>Password:</label><?php echo $password; ?>
-	        </div>
-	        
-	        
-	        
-	       
+	       <div class="alert alert-success" >You have registered successfully.Welcome!!!</div>
+	      
 	        <?php
 	    	
 	    }

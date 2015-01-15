@@ -12,11 +12,15 @@
 try{
 if(isset($_POST["page"]) && !empty($_POST["page"]))
 {
-	$full_name = trim(strip_tags(strtoupper($_POST["fullnames"])));
+
+	$colg = trim(strip_tags($_POST['colg']));
+	$phne = trim(strip_tags($_POST['phne']));
+	$full_name = trim(strip_tags(strtolower($_POST["fullnames"])));
 	$user_name = trim(strip_tags(strtolower($_POST["usernames"])));
 	$email_address = trim(strip_tags($_POST['emails']));
 	$password = trim(strip_tags($_POST['passs']));
 	$encrypted_password = md5($password);
+	
 		
 	if($full_name == "" || $user_name == "" || $email_address == "" || $password == "") //Be sure that all the fields are filled then proceed
 	{
@@ -45,15 +49,15 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
 
 
 
-
-		/*$db=new PDO("mysql:host=localhost;dbname=login",'root','');*/
+/*
+		$db=new PDO("mysql:host=localhost;dbname=login",'root','');
 		$db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
-
+*/
 
 		
 
 
-		$sql1 = "SELECT username FROM user WHERE username='$user_name'";
+		$sql1 = "SELECT user_name FROM regis WHERE user_name='$user_name'";
 		 $result1 = $db->query($sql1);
 		 $result2=$result1->fetchAll();
 		 $num_row1=count($result2);
@@ -67,18 +71,36 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
 		 else
 		    {
 
-			$sql2 = "INSERT INTO user (username, email, password, com_code) VALUES ('$user_name', '$email_address', '$password', '$encrypted_password')";
+			$sql2 = "INSERT INTO regis (user_name,college,phone, email, com_code,fullname) VALUES ('$user_name','$colg','$phne','$email_address', '$encrypted_password','$full_name')";
   			$result2 = $db->exec($sql2); 
 
+  			
+  			$val=150000;
+		$sql3 = "SELECT * FROM regis WHERE user_name='$user_name'";
+		 $result5 = $db->query($sql3);
+		 $result6=$result5->fetch();
+		 $id=$result6['id'];
+		 $temp=$id;
+		 $temp=$val+$temp;
+		 $kid="KS".$temp;
 
+		 $sql4="UPDATE regis SET k_id='$kid' WHERE id='$id'";
+		 $result4=$db->exec($sql4);
 
 
 
 
 		?>
        
-	       <div class="alert alert-success" >You have registered successfully and below are your User Name and Password!</div>
+	       <div class="alert alert-success" >You have registered successfully .Welcome!!!</div>
+	       
+
+	          
 	      
+	        
+	        
+	        
+	       
 	        <?php
 	    	
 	    }
