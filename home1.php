@@ -1,6 +1,7 @@
 <html>
 <head>
-	<title>knosys</title>
+	<title>Knosys'15</title>
+  <link rel="shortcut icon" href="logo/logo3.png"/>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/custom/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="content.css">
