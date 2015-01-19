@@ -1,9 +1,13 @@
 <?php
 try{
  session_start();
+ if(isset($_POST['name'])){
  $username = $_POST['name'];
+}
+if(isset($_POST['pwd'])){
  $password = ($_POST['pwd']);
  $password =md5($password);
+}
 
 define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
 define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 

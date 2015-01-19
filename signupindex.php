@@ -168,7 +168,7 @@ return false;
 
 
 
-<img src="svg/header130.png">
+
 
 <nav id="menu" class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
