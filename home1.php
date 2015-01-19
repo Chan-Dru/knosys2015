@@ -103,21 +103,21 @@ include('signupindex.php');
 
       <div class="row">
         <div id="coding-sub" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div id="codeHunt" data-toggle="modal" data-target=""><img class="level4" src="svg/lock&key.svg"/></div>
+          <div id="codeHunt" data-toggle="modal" data-target="lockAndkey"><img class="level4" src="svg/lock&key.svg"/></div>
           <div id="spyC" data-toggle="modal" data-target=".spyc"><img class="level4" src="svg/enigma.svg"/></div>
           <div id="debug" data-toggle="modal" data-target=".debug"><img class="level4" src="svg/dbugcbug.svg"/></div>
           <div id="reverse" data-toggle="modal" data-target=".reverse"><img class="level4" src="svg/hackOcrusasde.svg"/></div>
         </div>
         <div id="online-sub" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div id="codeChef" data-toggle="modal" data-target=""><img class="level5" src="svg/antagon.svg"/></div>
-          <div id="treasurHunt" data-toggle="modal" data-target=""><img class="level5" src="svg/maze.svg"/></div>
-          <div id="photography" data-toggle="modal" data-target=""><img class="level4" src="svg/shootTheFrame.svg"/></div>
-          <div id="webEvent" data-toggle="modal" data-target=""><img class="level4" src="svg/webprojectx.svg"/></div>
+          <div id="codeChef" data-toggle="modal" data-target="CutItShort"><img class="level5" src="svg/shortFlim.svg"/></div>
+          <div id="treasurHunt" data-toggle="modal" data-target="CobWeb"><img class="level5" src="svg/maze.svg"/></div>
+          <div id="photography" data-toggle="modal" data-target="ShootTheFrame"><img class="level4" src="svg/shootTheFrame.svg"/></div>
+          <div id="webEvent" data-toggle="modal" data-target="webProjectX"><img class="level4" src="svg/webprojectx.svg"/></div>
         </div>
         <div id="brain-sub" class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
           <div id="PP" data-toggle="modal" data-target=".PP"><img class="level6" src="svg/ityuktha.svg"/></div>
           <div id="windows" data-toggle="modal" data-target=".windows"><img class="level6" src="svg/winAdroit.svg"/></div>
-          <div id="crypto" data-toggle="modal" data-target=""><img class="level6" src="svg/concepcion.svg"/></div>
+          <div id="crypto" data-toggle="modal" data-target=""><img class="level6" src="svg/antagon.svg"/></div>
           <!-- <div id="quiz" data-toggle="modal" data-target=".quiz"><img class="level6" src="svg/fifa.svg"/></div> -->
         </div>
         <div id="gaming-sub" class="col-lg-9 col-md-9 col-sm-9 col-xs-9">

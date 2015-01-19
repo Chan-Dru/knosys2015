@@ -1,6 +1,6 @@
 <?php
-include('photo.html');
+include('shootTheFrame.html');
 include('maze.html');
 include('webprojectx.html');
-include('antagon.html');
+include('cutTheShot.html');
 ?>
