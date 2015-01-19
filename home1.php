@@ -91,7 +91,7 @@ $(document).ready(function(){
      
 
      $('#after_login').html("Hi,"+username+"<a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>");
-    // window.location.reload();
+     window.location.reload();
     }
     else
     {
