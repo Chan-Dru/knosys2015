@@ -104,9 +104,9 @@ include('signupindex.php');
       <div class="row">
         <div id="coding-sub" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div id="codeHunt" data-toggle="modal" data-target=".lockAndkey"><img class="level4" src="svg/lock&key.svg"/></div>
-          <div id="spyC" data-toggle="modal" data-target=".spyc"><img class="level4" src="svg/enigma.svg"/></div>
-          <div id="debug" data-toggle="modal" data-target=".debug"><img class="level4" src="svg/dbugcbug.svg"/></div>
-          <div id="reverse" data-toggle="modal" data-target=".reverse"><img class="level4" src="svg/hackOcrusasde.svg"/></div>
+          <div id="spyC" data-toggle="modal" data-target=".Enigma"><img class="level4" src="svg/enigma.svg"/></div>
+          <div id="debug" data-toggle="modal" data-target=".debugCbug"><img class="level4" src="svg/dbugcbug.svg"/></div>
+          <div id="reverse" data-toggle="modal" data-target=".HackOCrusade"><img class="level4" src="svg/hackOcrusasde.svg"/></div>
         </div>
         <div id="online-sub" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div id="codeChef" data-toggle="modal" data-target=".CutItShort"><img class="level5" src="svg/shortFlim.svg"/></div>
