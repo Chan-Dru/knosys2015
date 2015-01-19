@@ -16,7 +16,7 @@
 </div>
 <div id="body" class="container-fluid">
   <?php
-//include('signupindex.php');
+include('signupindex.php');
   ?>
   <div id="heading">
     <img id="headerimg" src="svg/header.png"/>
