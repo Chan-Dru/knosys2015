@@ -35,7 +35,7 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
  if( $result3!=null) {
   echo 'true';
   $_SESSION['user_name']=$username;
-  $_SESSION['user_id']=$result3['id'];
+  $_SESSION['user_id']=$result3['k_id'];
  }
  else{
  echo 'false';
