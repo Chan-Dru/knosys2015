@@ -119,6 +119,10 @@ data: "Event_Name="+Event_Name,
 success: function(event_name){
 $("."+Event_Name+" .result").html(event_name);
 $("."+Event_Name+" .register").css('display','none');
+},
+beforeSend:function()
+{
+$("."+Event_Name+" .result").html('<div style="height:20px;"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px; color:black;">Please wait</font> <img style="height:20px;width:100px;"class="img-thumbnail" src="images/loadings.gif" alt="Loading...." align="center" title="Loading...."/></div><br clear="all">')
 }
 });
 return false;
