@@ -1,6 +1,6 @@
 <?php
 include('shootTheFrame.html');
-include('maze.html');
+include('cobWeb.html');
 include('webprojectx.html');
-include('cutTheShot.html');
+include('cutItShort.html');
 ?>
