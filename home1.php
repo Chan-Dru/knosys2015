@@ -110,9 +110,10 @@ include('signupindex.php');
         </div>
         <div id="online-sub" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div id="codeChef" data-toggle="modal" data-target=".CutItShort"><img class="level5" src="svg/shortFlim.svg"/></div>
-          <div id="treasurHunt" data-toggle="modal" data-target=".Cob_Web"><img class="level5" src="svg/maze.svg"/></div>
-          <div id="photography" data-toggle="modal" data-target=".ShootTheFrame"><img class="level4" src="svg/shootTheFrame.svg"/></div>
-          <div id="webEvent" data-toggle="modal" data-target=".webProjectX"><img class="level4" src="svg/webprojectx.svg"/></div>
+          <!-- <div id="treasurHunt" data-toggle="modal" data-target=".Cob_Web"><img class="level5" src="svg/maze.svg"/></div> -->
+          <div id="treasurHunt" data-toggle="modal" data-target=".maze"><img class="level5" src="svg/maze.svg"/></div>
+          <div id="photography" data-toggle="modal" data-target=".ShootTheFrame"><img class="level5" src="svg/shootTheFrame.svg"/></div>
+          <div id="webEvent" data-toggle="modal" data-target=".webProjectX"><img class="level5" src="svg/webprojectx.svg"/></div>
         </div>
         <div id="brain-sub" class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
           <div id="PP" data-toggle="modal" data-target=".Ityuktha"><img class="level6" src="svg/ityuktha.svg"/></div>
