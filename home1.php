@@ -73,7 +73,7 @@ include('signupindex.php');
         </div>
         <div id="workshop-sub" class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
           <div  id="mozilla" data-toggle="modal" data-target=""><img id="workshop1" class="level3" src="svg/firefox.svg"/></div>
-          <div  id="ethicalHacking" data-toggle="modal" data-target=""><img id="workshop2" class="level3" src="svg/ethicalHacking.svg"/></div>
+          <div  id="ethicalHacking" data-toggle="modal" data-target=".ethicalHacking"><img id="workshop2" class="level3" src="svg/ethicalHacking.svg"/></div>
         </div>
       </div>
 
