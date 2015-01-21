@@ -128,6 +128,28 @@ $("."+Event_Name+" .result").html('<div style="height:20px;"><font style="font-f
 return false;
 
 });
+
+//team event register
+
+$(".submit_team").click(function(){
+var Event_Name=$(this).val();
+var team_member=$('#team_member').val();
+var team_name =$('#team_name').val();
+var DD_number =$('#DD_number').val();
+$.ajax({
+type: "POST",
+url: "teamvalidate.php",
+data: "Event_Name="+Event_Name+"&team_name="+team_name+"&team_member="+team_member+"&DD_number="+DD_number, 
+success: function(teamStatus){
+$("."+Event_Name+" .result").html(teamStatus);
+/*$("."+Event_Name+" .register").css('display','none');*/
+}
+});
+return false;
+
+});
+
+
 });
 </script>
 
@@ -193,7 +215,7 @@ return false;
   <div class="col-lg-2"></div>
    <?php if(isset($_SESSION['user_id'])){
   
-    echo "<div id='after_login'><a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>Hi,".$_SESSION['user_name']."</div>";
+    echo "<div id='after_login'><a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>Hi,".$_SESSION['user_name']." (".$_SESSION['user_id'].")</div>";
   ?>
   
 
