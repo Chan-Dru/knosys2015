@@ -44,6 +44,9 @@
   {
     $("#signup_status").html('<div class="alert alert-warning">Please enter your desired password to go.</div>');
     $("#passs").focus();
+  }else if(phne==""){
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your Phone Number to proceed.</div>');
+    $("#phne").focus();    
   }
   else
   {
