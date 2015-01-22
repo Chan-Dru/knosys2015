@@ -47,6 +47,9 @@
   }else if(phne==""){
     $("#signup_status").html('<div class="alert alert-warning">Please enter your Phone Number to proceed.</div>');
     $("#phne").focus();    
+  }else if(colg==""){
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your College Name to proceed.</div>');
+    $("#colg").focus();
   }
   else
   {
