@@ -36,7 +36,8 @@ if(isset($_POST["page"]) && !empty($_POST["page"]))
 	}
 	else
 	{
-		//Check your database for already existing Username and/or Email address to avoid duplicates and save this info to your database if you wish before you can then display a success message to your users as shown below
+
+
 define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
 define('DB_PORT',getenv('OPENSHIFT_MYSQL_DB_PORT')); 
 define('DB_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
@@ -48,12 +49,12 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
 
 
 
-/*
 
-		$db=new PDO("mysql:host=localhost;dbname=login",'root','');
-		$db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
 
-*/
+/*		$db=new PDO("mysql:host=localhost;dbname=login",'root','');
+		$db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);*/
+
+
 		
 
 

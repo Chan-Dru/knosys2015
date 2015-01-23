@@ -21,8 +21,8 @@ $db = new PDO($dsn, DB_USER, DB_PASS);
 
 
 
- 
-/* $db=new PDO("mysql:host=localhost;dbname=login",'root','');
+/* 
+ $db=new PDO("mysql:host=localhost;dbname=login",'root','');
  $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_WARNING);
 */
 

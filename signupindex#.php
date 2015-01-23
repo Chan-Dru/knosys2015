@@ -1,8 +1,49 @@
 <?php session_start(); ?>
 <html>
 <head>
+<!-- <link rel="stylesheet" href="bootstrap.css"/>
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script> -->
 
  <script type="text/javascript">
+
+ 
+function validateForm()
+    {
+      var mob = /^[+][1-9]{1}[0-9]{11,14}$/;
+      var mail = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      var name=/^[a-zA-Z]+$/;
+      var y=document.forms["register"]["college"].value;
+      if (y==null || y=="")
+      {
+        $('#acco-status').html("Your College name must be filled out");
+        return false;
+      }
+      var y=document.forms["register"]["name"].value;
+      if (y==null || y=="")
+      {
+        alert("Your Name must be filled out");
+        return false;
+      }     
+      var y=document.forms["register"]["phone"].value;
+      if (y==null || y=="")
+      {
+        alert("Phone number must be filled out");
+        return false;
+      }
+      var y=document.forms["register"]["email"].value;
+      if (y==null || y=="")
+      {
+        alert("Email must be filled out");
+        return false;
+      }
+      if (mail.test(y) == false)
+      {
+        alert("Enter valid email id");
+        return false;
+      }     
+    }
+    
 
   function Users_Registration() 
 {
@@ -41,6 +82,12 @@
   {
     $("#signup_status").html('<div class="alert alert-warning">Please enter your desired password to go.</div>');
     $("#passs").focus();
+  }else if(phne==""){
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your Phone Number.</div>');
+    $("#phne").focus();
+  }else if(colg==""){
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your College Name to proceed.</div>');
+    $("#colg").focus();
   }
   else
   {
@@ -65,16 +112,9 @@
   }
 }
 
+/*login*/
 $(document).ready(function(){
- $("#login_a").click(function(){
-  $("#shadow").fadeIn("normal");
-  $("#login_form").fadeIn("normal");
-  $("#user_name").focus();
- });
- $("#cancel_hide").click(function(){
-  $("#login_form").fadeOut("normal");
-  $("#shadow").fadeOut();
- });
+
  $("#login").click(function(){
 
   username=$("#user_name").val();
@@ -90,7 +130,7 @@ $(document).ready(function(){
      
 
      $('#after_login').html("Hi,"+username+"<a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>");
-
+     window.location.reload();
     }
     else
     {
@@ -101,13 +141,74 @@ $(document).ready(function(){
    {
     $("#add_err").html('<div style="height:20px;"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px; color:black;">Please wait</font> <img style="height:20px;width:100px;"class="img-thumbnail" src="images/loadings.gif" alt="Loading...." align="center" title="Loading...."/></div><br clear="all">')
    }
+
   });
+
   return false;
  });
+          
 });
+
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){
 
+$(".submit").click(function(){
+var Event_Name=$(this).val();
+$.ajax({
+type: "POST",
+url: "ajax.php",
+data: "Event_Name="+Event_Name,
+success: function(event_name){
+$("."+Event_Name+" .result").html(event_name);
+$("."+Event_Name+" .register").css('display','none');
+},
+beforeSend:function()
+{
+$("."+Event_Name+" .result").html('<div style="height:20px;"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px; color:black;">Please wait</font> <img style="height:20px;width:100px;"class="img-thumbnail" src="images/loadings.gif" alt="Loading...." align="center" title="Loading...."/></div><br clear="all">')
+}
+});
+return false;
+
+});
+
+//team event register
+
+$(".submit_team").click(function(){
+var Event_Name=$(this).val();
+var team_member=$('#team_member').val();
+var team_name =$('#team_name').val();
+if(team_name==""){
+  $("."+Event_Name+" .result").html('<h2>Team Name Field is required.</h2>');
+}else{
+  $.ajax({
+  type: "POST",
+  url: "teamvalidate.php",
+  data: "Event_Name="+Event_Name+"&team_name="+team_name+"&team_member="+team_member, 
+  success: function(teamStatus){
+    
+   if($.trim(teamStatus)=='notregis'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-warning" role="alert">Your team mate has not registered.</div>');
+}else if($.trim(teamStatus)=='done'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-success" role="alert">Successfully Registered for this event.</div>');
+  $("."+Event_Name+" .register").css('display','none');
+}else if($.trim(teamStatus)=='already'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-info" role="alert">Team mate already registered for this event.</div>');
+}else if($.trim(teamStatus)=='login'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-info" role="alert">Please Login.</div>');
+}else if($.trim(teamStatus)=='teamalready'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-info" role="alert">Already registered.</div>');
+}
+  }
+  });
+  return false;
+}
+
+});
+});
+
+</script>
 
 
 </head>
@@ -146,11 +247,21 @@ $(document).ready(function(){
 #after_login{
   color:white;
 }
+#right_button{
+  float:right;
+}
+#right_button div{
+  float:right;
+  margin-top:10px;
+}
+.login_need{
+  width:40%;
+}
+
 </style>
 
 
-
-
+   
 
 <nav id="menu" class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -170,17 +281,25 @@ $(document).ready(function(){
 <div  id="profile" class="row">
   <div class="col-lg-2"></div>
    <?php if(isset($_SESSION['user_id'])){
-  
-    echo "<div id='after_login'><a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>Hi,".$_SESSION['user_name']."</div>";
+   
+    echo "<div id='after_login'><a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>Hi,".$_SESSION['user_name']." (".$_SESSION['user_id'].")</div>";
   ?>
-  
-
+<script>
+$(document).ready(function(){
+$('.accomodation-button').css('display','block');
+});
+</script>
 <?php }else {?>
   <div id="after_login">
 
   <img data-toggle="modal" data-target=".signup" class="before_login menu-button col-lg-1"src="pins/register.png"/>
 <img id="login_a" href="#" data-toggle="modal" data-target=".login" class="before_login menu-button col-lg-1" src="pins/login.png"/>
 </div>
+<script>
+$(document).ready(function(){
+  $('#right_button').css('display','none');
+});
+  </script>
 
   <?php } ?>
 
@@ -319,11 +438,11 @@ $(document).ready(function(){
           </div>
 
 <div class="form-group">
-          <label >College </label>
+          <label >College Name</label>
           <input type="text" class="form-control" id="colg" name="colg" placeholder="Enter College Name" required>
           </div>
           <div class="form-group">
-          <label >Phone </label>
+          <label >Phone Number</label>
           <input type="text" class="form-control" id="phne" name="phne" placeholder="Enter Mobile Number" required>
           </div>
 
@@ -347,6 +466,93 @@ $(document).ready(function(){
   </div>
 
 
+
+
+
+
+
+
+<style type="text/css">
+#load
+{
+display:none;
+/*width:500px;
+height:500px;
+border:2px solid black;
+background:url(loading3.gif) no-repeat;*/
+}
+#line
+{
+margin:20px 0;
+}
+</style>
+
+
+
+<?php include('eventValidrefresh.php');?>
+
+
+<!-- 
+<button  class="btn btn-primary btn-lg" data-toggle="modal" data-target=".ityuktha">
+  ityuktha
+</button>
+
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target=".winadroit">
+  winadroit
+</button>
+
+
+
+<div class="modal fade ityuktha" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Ityuktha</h4>
+      </div>
+      <div class="modal-body">
+        <div id="load" style="">
+</div>
+<div class="result">
+</div>
+<button type="submit" class="register submit btn btn-primary" name="Event_Name" value="ityuktha">register</button>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade winadroit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button  type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">winadroit</h4>
+      </div>
+      <div class="modal-body">
+        <div id="load" style="">
+</div>
+
+<div class="result">
+</div>
+<button type="submit"  class="register submit btn btn-primary" name="Event_Name" value="winadroit">register</button>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ -->
 
 </body>
 </html>

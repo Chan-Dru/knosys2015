@@ -8,7 +8,7 @@
 <?php
 include('home1.php');
 include('files/content.php');
-include('files/mainContacts/mainContacts.html');
+include('files/mainContacts/mainContacts.php');
 
 ?>
 

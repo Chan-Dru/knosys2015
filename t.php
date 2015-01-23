@@ -1,6 +1,6 @@
 <?php 
 session_start();
-/*if(isset($_SESSION['user_id']))*/
+/*if(isset($_SESSION['user_id']))
 	echo isset($_SESSION['phone']);
-//echo $_SESSION['']
+*/echo $_SESSION['phone'];
 ?>

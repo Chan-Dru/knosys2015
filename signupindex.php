@@ -7,6 +7,7 @@
 
  <script type="text/javascript">
 
+
   function Users_Registration() 
 {
 
@@ -45,8 +46,8 @@
     $("#signup_status").html('<div class="alert alert-warning">Please enter your desired password to go.</div>');
     $("#passs").focus();
   }else if(phne==""){
-    $("#signup_status").html('<div class="alert alert-warning">Please enter your Phone Number to proceed.</div>');
-    $("#phne").focus();    
+    $("#signup_status").html('<div class="alert alert-warning">Please enter your Phone Number.</div>');
+    $("#phne").focus();
   }else if(colg==""){
     $("#signup_status").html('<div class="alert alert-warning">Please enter your College Name to proceed.</div>');
     $("#colg").focus();
@@ -135,6 +136,39 @@ return false;
 
 });
 
+//team event register
+
+$(".submit_team").click(function(){
+var Event_Name=$(this).val();
+var team_member=$('#team_member').val();
+var team_name =$('#team_name').val();
+if(team_name==""){
+  $("."+Event_Name+" .result").html('<h2>Team Name Field is required.</h2>');
+}else{
+  $.ajax({
+  type: "POST",
+  url: "teamvalidate.php",
+  data: "Event_Name="+Event_Name+"&team_name="+team_name+"&team_member="+team_member, 
+  success: function(teamStatus){
+    
+   if($.trim(teamStatus)=='notregis'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-warning" role="alert">Your team mate has not registered.</div>');
+}else if($.trim(teamStatus)=='done'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-success" role="alert">Successfully Registered for this event.</div>');
+  $("."+Event_Name+" .register").css('display','none');
+}else if($.trim(teamStatus)=='already'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-info" role="alert">Team mate already registered for this event.</div>');
+}else if($.trim(teamStatus)=='login'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-info" role="alert">Please Login.</div>');
+}else if($.trim(teamStatus)=='teamalready'){
+  $("."+Event_Name+" .result").html('<div class="alert alert-info" role="alert">Already registered.</div>');
+}
+  }
+  });
+  return false;
+}
+
+});
 });
 
 </script>
@@ -176,11 +210,21 @@ return false;
 #after_login{
   color:white;
 }
+#right_button{
+  float:right;
+}
+#right_button div{
+  float:right;
+  margin-top:10px;
+}
+.login_need{
+  width:40%;
+}
+
 </style>
 
 
-
-
+   
 
 <nav id="menu" class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
@@ -200,17 +244,25 @@ return false;
 <div  id="profile" class="row">
   <div class="col-lg-2"></div>
    <?php if(isset($_SESSION['user_id'])){
-  
+   
     echo "<div id='after_login'><a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>Hi,".$_SESSION['user_name']." (".$_SESSION['user_id'].")</div>";
   ?>
-  
-
+<script>
+$(document).ready(function(){
+$('.accomodation-button').css('display','block');
+});
+</script>
 <?php }else {?>
   <div id="after_login">
 
   <img data-toggle="modal" data-target=".signup" class="before_login menu-button col-lg-1"src="pins/register.png"/>
 <img id="login_a" href="#" data-toggle="modal" data-target=".login" class="before_login menu-button col-lg-1" src="pins/login.png"/>
 </div>
+<script>
+$(document).ready(function(){
+  $('#right_button').css('display','none');
+});
+  </script>
 
   <?php } ?>
 

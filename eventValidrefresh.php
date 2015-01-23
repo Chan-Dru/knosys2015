@@ -13,8 +13,7 @@ if($rowCount>0){
 $sql1="SELECT * FROM regis WHERE k_id='$userId'";
 $result15=$db->query($sql1);
 $phone=$result15->fetch();
-$_SESSION['phone']=$phone['phone'];
-/*echo $_SESSION['phone'];*/
+$_SESSION['knosys']=$phone['phone'];
 }
  $result9=$db->query($sql);
  $result10=$result9->fetchAll();
@@ -29,7 +28,7 @@ $_SESSION['phone']=$phone['phone'];
           $("."+eventname+" .register").css('display','none');
           }
         remedy("<?php echo $row['event_name']; ?>");
-$('#valid').html('chandru');
+
       });
       </script>
     <?php

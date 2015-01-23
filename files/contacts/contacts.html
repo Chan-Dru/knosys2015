@@ -1,5 +1,109 @@
 <html>
 <head>
+  <style>
+/* Contacts */
+#content-contacts
+{
+  position: relative;
+  height: 98%;
+  width: 86%;
+  top:0%;
+  left: 50%;
+  margin-left: -37.2%;
+  overflow-y:scroll !important;
+  overflow-x:hidden !important;
+  white-space: nowrap;
+}
+.person
+{
+  display: inline-block;  
+  width:150px;
+  height:auto;
+  position: relative;
+  padding: 10px;
+  margin: 0 10px 100px 10px;
+  float: left;
+}
+.picture
+{
+    perspective: 250px;
+}
+.picture img
+{
+  width: 70%;
+  height:auto;
+  margin: 0 15%;
+  border: 2px solid white;
+  border-radius: 5px;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+.picture img:hover
+{
+  cursor: pointer;
+  border-color: #60D8DF;
+}
+#size-picture
+{
+  width: 200px;
+  height: 200px;
+}
+.text
+{
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  color: white;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  white-space: normal;
+}
+.text div
+{
+  float: center;
+  width: 100%;  
+}
+.person-name
+{
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #60D8DF;
+}
+.person-desig
+{
+  border-bottom: 1px solid #60D8DF;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+.person-desig, .person-contact
+{
+  font-size: 14px;
+  color: #CCC;
+  font-weight: bold;
+}
+.ph-number
+{
+  font-size: 13px;
+}
+@media(max-width: 700px){
+  .person{
+    width: 100px;
+  }
+  #content-contacts{
+    width: 86%;
+    margin-left: -43%;
+  }
+}
+</style>
 </head>
 <body>
 <div class="modal fade contacts" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -10,8 +114,8 @@
   &times;</button>
   <h4 class="modal-title">Contacts</h4>
    <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#contacts-home" aria-controls="home" role="tab" data-toggle="tab">Sponsor Team</a></li>
-    <li role="presentation"><a href="#contacts-profile" aria-controls="profile" role="tab" data-toggle="tab">Execution Team</a></li>
+    <li role="presentation" class="active"><a href="#contacts-home" aria-controls="home" role="tab" data-toggle="tab">Knosys&#39;15 Team</a></li>
+    <!-- <li role="presentation"><a href="#contacts-profile" aria-controls="profile" role="tab" data-toggle="tab">Execution Team</a></li> -->
   </ul>
   </div>
   <div class="modal-body">
@@ -24,10 +128,305 @@
 
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="contacts-home">
-      <div class="row"><div class="col-lg-2">Ranjith</div>:9488567044</div>
-      <div class="row"><div class="col-lg-2">Vignesh</div>:8015289099</div>
-      <div class="row"><div class="col-lg-2">Kalaivanan</div>:9751124678</div>
-      <div class="row"><div class="col-lg-2">Bharadhan</div>:8883526794</div>
+         <div class="row">
+          <div class="col-lg-1"></div>
+        <div class="col-lg-4 ">     
+          <div class="person">
+                    <div class="picture"><img src="img/director.png"></div>
+                    <div class="text text-font">
+                      <div class="person-name">
+                      Dr. S.K.Pandey
+                        </div>
+                      <div class="person-desig">
+                        Patron
+                        </div>
+                      <div class="person-contact">
+                        Director
+                        NIT-Py
+                        </div>
+                    </div>
+                  </div>
+        </div>
+
+        <div class="col-lg-4">     
+        <div class="person ">
+                  <div class="picture"><img src="img/aghila.png"></div>
+                  <div class="text text-font">
+                      <div class="person-name">
+                      Dr.G.Aghila
+                      </div>
+                      <div class="person-desig">
+                      Chairperson
+                      </div>
+                    <div class="person-contact">
+                      HOD CSE
+                      </div>
+                  </div>
+                </div>
+        </div>
+
+        <div class="col-lg-3">     
+        <div class="person">
+                  <div class="picture"><img src="img/narenraj.png"></div>
+                  <div class="text text-font">
+                    <div class="person-name">
+                      Dr.Narendran Rajagopalan
+                    </div>
+                    <div class="person-desig">
+                      Faculty Advisor
+                    </div>
+                  <div class="person-contact">
+                      Asst. Proffesor
+                        </div>
+                  </div>
+                </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-lg-3">
+        <div class="person ">
+                <div class="text text-font">
+                      <div class="person-name">
+                      Ranjith.C
+                      </div>
+                      <div class="person-desig">
+                      President
+                      </div>
+                    <div class="person-contact">
+                    ranjith.c786@gmail.com<br>
+                    <span class="ph-number">+91
+                      9488567044</span>
+                  </div>
+                  </div>
+                </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="person">
+                  
+                    <div class="text text-font">
+                      <div class="person-name">
+                      Dileep Kumar.S.V
+                        </div>
+                      <div class="person-desig">
+                        Secretary
+                        </div>
+                      <div class="person-contact">
+                        dileep20121994@gmail.com<br>
+                        <span class="ph-number">+91
+                          7418519573</span>
+                        </div>
+                    </div>
+                  </div>
+          </div>
+      <div class="col-lg-3">
+        <div class="person">
+                  
+                  <div class="text text-font">
+                    <div class="person-name">
+                      Rohith.G
+                    </div>
+                    <div class="person-desig">
+                       Vice President
+                    </div>
+                  <div class="person-contact">
+                    rohith2394@gmail.com<br>
+                    <span class="ph-number">+91
+                      8903480422</span>
+                  </div>
+                  </div>
+                </div>
+        
+</div>
+<div class="col-lg-3">
+        
+        <div class="person">
+                  
+                  <div class="text text-font">
+                    <div class="person-name">
+                                     S.J.Bhardhan
+                    </div>
+                    <div class="person-desig">
+                                          Treasurer
+                    </div>
+                  <div class="person-contact">
+                    sjbharadhan9@gmail.com<br>
+                    <span class="ph-number">+91
+                      8883526794</span>
+                  </div>
+                  </div>
+                </div>
+        
+</div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+        <div class="person">
+                  
+                  <div class="text text-font">
+                    <div class="person-name">
+                      Uttam Kumar P
+                    </div>
+                    <div class="person-desig">
+                      Joint Secretary
+                    </div>
+                  <div class="person-contact">
+                    panasalauttam@gmail.com<br>
+                    <span class="ph-number">+91
+                      8056821859</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+        <div class="person">
+                <div class="text text-font">
+                  <div class="person-name">
+                  Vignesh.S
+                  </div>
+
+                  <div class="person-desig">
+                    Head, Marketing
+                  </div>
+
+                  <div class="person-contact">
+                    vignesh.s221193@gmail.com<br>
+                    <span class="ph-number">+91
+                      8015289099</span>
+                  </div>
+                </div>
+              </div>              
+              </div>
+              <div class="col-lg-3">
+              <div class="person">
+               
+                <div class="text text-font">
+                  <div class="person-name">
+                Vijayalakshmi Maurya
+
+                  </div>
+
+                  <div class="person-desig">
+                    Head, Events
+                  </div>
+
+                  <div class="person-contact">
+                    vjlmaurya@gmail.com<br>
+                    <span class="ph-number">+91
+                     8122512259</span>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="col-lg-3">
+              <div class="person">
+                
+
+                <div class="text text-font">
+                  <div class="person-name">
+                Parthipan
+                  </div>
+
+                  <div class="person-desig">
+                    Head, Hospitality
+                  </div>
+
+                  <div class="person-contact">
+                    parthi.m93@gmail.com<br>
+                    <span class="ph-number">+91
+                      85267 25117</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+            <div class="col-lg-3">
+              <div class="person">
+                
+
+                <div class="text text-font">
+                  <div class="person-name">
+                Karthik Sonti
+                  </div>
+
+                  <div class="person-desig">
+                    Head, Workshops
+                  </div>
+
+                  <div class="person-contact">
+                    karthiksonti@gmail.com<br>
+                    <span class="ph-number">+91
+                      9053756126</span>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="col-lg-3">
+              <div class="person">
+                
+
+                <div class="text text-font">
+                  <div class="person-name">
+                Vijay
+                  </div>
+
+                  <div class="person-desig">
+                    Head, Publicity
+                  </div>
+
+                  <div class="person-contact">
+                    vijayr392@gmail.com<br>
+                    <span class="ph-number">+91
+                      9487791013</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="person">
+                
+
+                <div class="text text-font">
+                  <div class="person-name">
+                Chandirasegaran Punithavel
+                  </div>
+
+                  <div class="person-desig">
+                    Head,Web Operations
+                  </div>
+
+                  <div class="person-contact">
+                    chandrunitpy@gmail.com<br>
+                    <span class="ph-number">+91
+                      8110086350</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="person">
+                
+
+                <div class="text text-font">
+                  <div class="person-name">
+              MMS Ganesh
+                  </div>
+
+                  <div class="person-desig">
+                    Head, Design
+                  </div>
+
+                  <div class="person-contact">
+                    balajiynm@gmail.com<br>
+                    <span class="ph-number">+91
+                      9578028974</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
 </div>
     <div role="tabpanel" class="tab-pane fade" id="contacts-profile">
       <div class="row"><div class="col-lg-2">vignesh</div>:8015289099</div>
