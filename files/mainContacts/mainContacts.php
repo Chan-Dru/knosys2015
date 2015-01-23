@@ -13,24 +13,26 @@
   width:24%;
 }
 .treasure-img{
-width:60%;
+
 float:right;
 }
 .treasure-button{
+width:9%;
 position:absolute;
-top:97px;
-right:0px;
+top:100px;
+right:5px;
 
 }
 .accomodation-button{
 position: absolute;
 top:100px;
-right:90px;
+right:45px;
 display:none;
 }
 .accomodation-img{
 width:60%;
 }
+
 </style>
 
 
@@ -43,14 +45,14 @@ width:60%;
 
 
 
-  <a target="_blank" href="accomodation.php"><div class="accomodation-button" ><img class="accomodation-img" src="pins/accomodation.png" /></div></a>
+  <div class="accomodation-button"><a target="_blank" href="accomodation.php" ><img  class="accomodation-img" src="pins/accomodation.png" /></a></div>
 <?php if(isset($_SESSION['user_id'])&&isset($_SESSION['knosys'])) {?>
   <form  action="http://cobweb.knosys.in/index.php" method="POST">
   <input type="hidden" value='<?php echo $_SESSION["user_id"];?>' name="user_id" />
   <input type="hidden" value='<?php echo $_SESSION["knosys"];?>' name="knosys" />
   <input type="hidden" value='<?php echo $_SESSION["user_name"];?>' name="username" />
 
-<button class="treasure-button"  type="submit" style="background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,0)"><img class="treasure-img"  src="pins/treasure.png"/></button>
+<input class="treasure-button "  type="image" alt='submit' class="btn-sm btn"  src="pins/treasure.png"/>
 </form>
 <?php } ?>
 
@@ -143,7 +145,7 @@ $(function() {
     });
 });
 
-	var currentIndex = 0,
+  var currentIndex = 0,
   items = $('.slider div'),
   itemAmt = items.length;
 

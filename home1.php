@@ -1,4 +1,4 @@
-<html manifest="demo.appcache">
+<html>
 <head>
 	<title>Knosys'15</title>
   <link rel="shortcut icon" href="logo/logo3.png"/>
