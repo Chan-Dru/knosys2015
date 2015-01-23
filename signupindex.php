@@ -68,7 +68,7 @@
       success: function(response)
       {
           $('#signup_status').hide().fadeIn('slow').html(response);
-          $('#signup_button').css('display','none');
+          /*$('#signup_button').css('display','none');*/
           
     
       }
