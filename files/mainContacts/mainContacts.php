@@ -114,7 +114,9 @@ margin-top:30px;
     </div>
     <div>Sponsorship window is now open.Contact Ranjith 9488567044.
     </div>
-    <div>Treasuer Hunt (CobWeb) started.</div>
+    <div>Treasuer Hunt (CobWeb) event started.</div>
+    <div>Accomodation Registration Started.</div>
+    <div>WebProjectX - Problem Statements are published.</div>
     <!-- <div>
       
     </div>
@@ -193,7 +195,7 @@ var NautoSlide = setInterval(function() {
     NcurrentIndex = 0;
   }
   NcycleItems();
-}, 2500);
+}, 3000);
 
 })
 
