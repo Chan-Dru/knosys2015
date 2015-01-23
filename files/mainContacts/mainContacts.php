@@ -33,11 +33,22 @@ display:none;
 width:60%;
 }
 
+#about_knosys{
+  position:absolute;
+  top:20px;
+  left:50px;
+}
+
+#about_knosys{
+height:50px;
+margin-top:30px;
+}
+
 </style>
 
-
-
-
+<div class="row" id="about_k">
+<div id="about_knosys" class="btn col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-lg-3 col-xs-3 col-sm-3 col-md-3" data-toggle="modal" data-target=".about"></div>
+</div>
 
 
 

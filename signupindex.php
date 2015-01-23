@@ -164,7 +164,10 @@ if(team_name==""){
 }else if($.trim(teamStatus)=='teamalready'){
   $("."+Event_Name+" .result").html('<div class="alert alert-info" role="alert">Already registered.</div>');
 }
-  }
+  }beforeSend:function()
+{
+$("."+Event_Name+" .result").html('<div style="height:20px;"><font style="font-family:Verdana, Geneva, sans-serif; font-size:12px; color:black;">Please wait</font> <img style="height:20px;width:100px;"class="img-thumbnail" src="images/loadings.gif" alt="Loading...." align="center" title="Loading...."/></div><br clear="all">')
+}
   });
   return false;
 }
