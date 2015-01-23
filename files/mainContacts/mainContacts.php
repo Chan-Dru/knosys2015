@@ -62,7 +62,7 @@ width:60%;
 <div id="social">
 <a target="_blank" href="https://www.youtube.com/channel/UCfdfi2Jr3I6Go4h5vugsUjA"><img src="pins/youtube.png"/></a>
 <a target="_blank" href="https://www.facebook.com/knosys"><img src="pins/facebook.png"/></a>
-<a target="_blank" href=""><img src="pins/google.png"/></a>
+<a target="_blank" href="https://plus.google.com/u/0/107415381258778827347/posts"><img src="pins/google.png"/></a>
 
 </div>
 
@@ -103,6 +103,7 @@ width:60%;
     </div>
     <div>Sponsorship window is now open.Contact Ranjith 9488567044.
     </div>
+    <div>Treasuer Hunt (CobWeb) started.</div>
     <!-- <div>
       
     </div>

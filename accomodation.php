@@ -116,7 +116,8 @@ if($result1==NULL)
 		    <label for="exampleInput3">Email Address</label>
 		    <input type="text" class="form-control" id="a-email" name="email" placeholder="example@mail.com">
 		  </div>
-		  <h4>Accomodation fee: Rs.100 per day</h4>
+		  <h4>Accomodation fee: Rs.100 per day </h4>
+		  <h4>Food Coupons can be bought at PR desk.</h4>
 		<div id="a-status"></div>  
 		  <input type="submit" class="submit btn btn-success" name="info_submitted" value="Submit"></button>
 		</form>
