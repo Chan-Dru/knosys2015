@@ -108,7 +108,7 @@ margin-top:30px;
 
 
   <div class="notification">
-    <div style="display: inline-block;">Event Registration has been started.
+    <div style="display: inline-block;">Event Registration has  started.
     </div>
     <div>Ethical Hacking workshop on 30-01-2015.
     </div>
@@ -116,7 +116,8 @@ margin-top:30px;
     </div>
     <div>Treasuer Hunt (CobWeb) event started.</div>
     <div>Accomodation Registration Started.</div>
-    <div>WebProjectX - Problem Statements are published.</div>
+    <div>WebProjectX -(online) Problem Statements are published.</div>
+    <div>Antagon - Problem Statement is published.</div>
     <!-- <div>
       
     </div>

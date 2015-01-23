@@ -9,7 +9,7 @@
 include('home1.php');
 include('files/content.php');
 include('files/mainContacts/mainContacts.php');
-/*include('files/about.html');*/
+include('files/about.html');
 
 ?>
 
