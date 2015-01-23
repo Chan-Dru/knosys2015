@@ -68,6 +68,7 @@
       success: function(response)
       {
           $('#signup_status').hide().fadeIn('slow').html(response);
+          $('#signup_button').css('display','none');
           
     
       }
@@ -421,7 +422,7 @@ $(document).ready(function(){
           <div class="modal-footer">
             <div class="row">
 <div align="left"  class="col-lg-10" id="signup_status"></div>
-<button href="javascript:void(0);"  class="col-lg-2 btn btn-success btn-lg " onClick="Users_Registration();">Submit</button>
+<button href="javascript:void(0);" id="signup_button"  class="col-lg-2 btn btn-success btn-lg " onClick="Users_Registration();">Submit</button>
 </div>
 </div>
       </div>
