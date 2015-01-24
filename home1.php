@@ -1,7 +1,13 @@
 <html manifest="demo.appcache">
 <head>
 	<title>Knosys'15</title>
-  <link rel="shortcut icon" href="logo/logo3.png"/>
+  <meta charset="UTF-8">
+<meta name="description" content="<p><b>National Institute of Technology Puducherry (NIT-Py)</b>, a beautiful coastal enclave in the basin of river Kaveri, nestled in the tranquil scenes of Karaikal is one among the ten new NITs in the Union Territory of Puducherry. Notwithstanding the tender age, NIT-Py is committed to produce effective and responsible technocrats who have the ability to serve the nation on its journey to growth and prosperity.</p>
+<p>Knosys is the annual technical festival conducted by students and fraternity of the <b>computer science department</b> of National Institute of Technology,Puducherry.The festival is traditionally held on last week of  the month of January, every year.The department is dedicated and determined for the upbringing of its student and works with zeal and enthusiasm.</p>
+<p>The name <b>Knosys</b> is derived from Greek noun <b>&#39;Gnosis&#39;</b> which means <b>&#39;religion of knowledge&#39;,</b> in the sense of mystical enlightment or &#39;insight&#39;. The name found its way due to the pre-known fact that computers dominate this era and their working still remains a mystery.</p>
+<p>Knosys attracts participants from all over India and seeks to provide collegiate students with a platform to showcase their scientific and engineering talents.</p>">
+<meta name="keywords" content="KNOSYS,COBWEB,KNOSYS15,ANTAGON,WEBPROJECTX,ITYUKTHA">
+  <link rel="icon" href="logo/logo3.png" type="image/gif" sizes="16x16"/>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/custom/bootstrap.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="content.css">
