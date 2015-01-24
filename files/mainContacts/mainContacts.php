@@ -12,26 +12,6 @@
   right:0px;
   width:24%;
 }
-.treasure-img{
-
-float:right;
-}
-.treasure-button{
-width:9%;
-position:absolute;
-top:100px;
-right:5px;
-
-}
-.accomodation-button{
-position: absolute;
-top:100px;
-right:45px;
-display:none;
-}
-.accomodation-img{
-width:60%;
-}
 
 #about_knosys{
   position:absolute;
@@ -44,13 +24,36 @@ height:50px;
 margin-top:30px;
 }
 
+
+
 </style>
+
+<div id="faq"><a href="query.php" target="_blank">FAQ</a></div>
+
+
 
 <div class="row" id="about_k">
 <div id="about_knosys" class="btn col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4 col-lg-3 col-xs-3 col-sm-3 col-md-3" data-toggle="modal" data-target=".about"></div>
 </div>
 
 
+<div id="counter">
+
+
+<img src="http://hitwebcounter.com/counter/counter.php?page=5962527&style=0036&nbdigits=5&type=page&initCount=0" title="visitors estimator" Alt="visitors estimator"   border="0" >
+<br/>
+<center><strong>Hit Counter</strong></center>  
+
+
+
+
+<!-- <img src="http://hitwebcounter.com/counter/counter.php?page=5962546&style=0036&nbdigits=5&type=ip&initCount=0" title="http://www.hitwebcounter.com/" Alt="http://www.hitwebcounter.com/"   border="0" >
+<br/>
+<center><strong>visitors</strong></center> -->
+   
+
+
+</div>
 
 
 
@@ -94,8 +97,8 @@ margin-top:30px;
     <div class="img-responsive img-rounded">
       <img  src="sponsors/aas_logo.png"/>
     </div>
-    <div class="img-responsive img-rounded">
-      <img  src="sponsors/dheen.png"/>
+    <div class="img-responsive img-rounded" style="padding-top:20px;">
+      <a href="http://www.passionsolutions.com/" targer="_blank"><img  src="sponsors/workshop.png"/></a>
     </div>
     <div class="img-responsive img-rounded" style="padding-top:20px;">
       <img  src="sponsors/new_temp_trans.png"/>

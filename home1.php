@@ -2,10 +2,10 @@
 <head>
 	<title>Knosys'15</title>
   <meta charset="UTF-8">
-<meta name="description" content="<p><b>National Institute of Technology Puducherry (NIT-Py)</b>, a beautiful coastal enclave in the basin of river Kaveri, nestled in the tranquil scenes of Karaikal is one among the ten new NITs in the Union Territory of Puducherry. Notwithstanding the tender age, NIT-Py is committed to produce effective and responsible technocrats who have the ability to serve the nation on its journey to growth and prosperity.</p>
-<p>Knosys is the annual technical festival conducted by students and fraternity of the <b>computer science department</b> of National Institute of Technology,Puducherry.The festival is traditionally held on last week of  the month of January, every year.The department is dedicated and determined for the upbringing of its student and works with zeal and enthusiasm.</p>
-<p>The name <b>Knosys</b> is derived from Greek noun <b>&#39;Gnosis&#39;</b> which means <b>&#39;religion of knowledge&#39;,</b> in the sense of mystical enlightment or &#39;insight&#39;. The name found its way due to the pre-known fact that computers dominate this era and their working still remains a mystery.</p>
-<p>Knosys attracts participants from all over India and seeks to provide collegiate students with a platform to showcase their scientific and engineering talents.</p>">
+<meta name="description" content="National Institute of Technology Puducherry (NIT-Py), a beautiful coastal enclave in the basin of river Kaveri, nestled in the tranquil scenes of Karaikal is one among the ten new NITs in the Union Territory of Puducherry. Notwithstanding the tender age, NIT-Py is committed to produce effective and responsible technocrats who have the ability to serve the nation on its journey to growth and prosperity.
+Knosys is the annual technical festival conducted by students and fraternity of the computer science department of National Institute of Technology,Puducherry.The festival is traditionally held on last week of  the month of January, every year.The department is dedicated and determined for the upbringing of its student and works with zeal and enthusiasm.
+The name Knosys is derived from Greek noun Gnosis which means religion of knowledge, in the sense of mystical enlightment or insight. The name found its way due to the pre-known fact that computers dominate this era and their working still remains a mystery.
+Knosys attracts participants from all over India and seeks to provide collegiate students with a platform to showcase their scientific and engineering talents.">
 <meta name="keywords" content="KNOSYS,COBWEB,KNOSYS15,ANTAGON,WEBPROJECTX,ITYUKTHA">
   <link rel="icon" href="logo/logo3.png" type="image/gif" sizes="16x16"/>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.1/custom/bootstrap.min.css">
@@ -128,7 +128,7 @@ include('signupindex.php');
         </div>
         <div id="gaming-sub" class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
           <div id="cod" data-toggle="modal" data-target=".cod"><img class="level3" src="svg/cod.svg"/></div>
-          <div id="funroom" data-toggle="modal" data-target=""><img class="level3" src="svg/funroom.svg"/></div>
+          <div id="funroom" data-toggle="modal" data-target=".funroom"><img class="level3" src="svg/funroom.svg"/></div>
           <!-- <div id="blur" data-toggle="modal" data-target=".blur"><img class="level7" src="svg/blur.svg"/></div>
           <div id="fifa" data-toggle="modal" data-target=".fifa"><img class="level7" src="svg/fifa.svg"/></div> -->
         </div>

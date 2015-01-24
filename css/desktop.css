@@ -1,3 +1,38 @@
+#counter{
+  position:fixed;
+  top:120px;
+  left:0px;
+}
+
+.treasure-img{
+
+float:right;
+}
+.treasure-button{
+width:9%;
+position:absolute;
+top:100px;
+right:5px;
+
+}
+.accomodation-button{
+position: absolute;
+top:100px;
+right:45px;
+display:none;
+}
+.accomodation-img{
+width:60%;
+}
+
+#faq{
+color:blue;
+font-size:20px;
+position:absolute;
+top:50px;
+right:70px;
+}
+
 .notification {
   width: 480px;
   height: 50px;
@@ -11,15 +46,15 @@
 }
 
 .notification div{
-	width:100%;
-	height:60px;
-	display:inline-block;
-	display:none;
+  width:100%;
+  height:60px;
+  display:inline-block;
+  display:none;
 }
 
 
 /*#slider-holder{
-	position: absolute;
+  position: absolute;
   top:100px;
   z-index: 10px
 }*/
@@ -40,7 +75,7 @@
   width:200px;
  /* background-color:white;*/
   position:absolute;
-  top:115px;
+  top:185px;
   float:left;
 }
 .slider {
@@ -49,7 +84,7 @@
   margin: 0 auto;
   text-align: center;
   position:absolute;
-  top:134px;
+  top:204px;
   float:left;
 }
 .slider div {
