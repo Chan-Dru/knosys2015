@@ -85,17 +85,14 @@ margin-top:30px;
 
 <div id="slider-holder">
   <div class="slider img-responsive img-rounded">
-    <div class="img-responsive img-rounded" style="display: inline-block;">
-      <img  src="sponsors/zoho.png"/>
+    <div class="img-responsive img-rounded" style="display: inline-block;padding-top:30px;">
+      <a href="http://www.btechjosh.com/" target="_blank"><img  src="sponsors/btechjosh.png"/></a>
     </div>
-    <div class="img-responsive img-rounded">
-     <img  src="sponsors/everbright.jpg"/>
+    <div class="img-responsive img-rounded" style="padding-top:10px;">
+      <a href="http://www.codechef.com/" target="_blank"><img  src="sponsors/codechef.png"/></a>
     </div>
-    <div class="img-responsive img-rounded">
-      <img  src="sponsors/venfield.jpg"/>
-    </div>
-    <div class="img-responsive img-rounded">
-      <img  src="sponsors/aas_logo.png"/>
+    <div class="img-responsive img-rounded" style="padding-top:30px;">
+      <a href="https://www.reload.in/" target="_blank"><img  src="sponsors/reload.png"/></a>
     </div>
     <div class="img-responsive img-rounded" style="padding-top:20px;">
       <a href="http://www.passionsolutions.com/" targer="_blank"><img  src="sponsors/workshop.png"/></a>
@@ -103,9 +100,9 @@ margin-top:30px;
     <div class="img-responsive img-rounded" style="padding-top:20px;">
       <img  src="sponsors/new_temp_trans.png"/>
     </div>
-    <div class="img-responsive img-rounded" style="padding-top:30px;">
+    <!-- <div class="img-responsive img-rounded" style="padding-top:30px;">
       <img  src="sponsors/greentrendz_logo.png"/>
-    </div>
+    </div> -->
   </div>
 </div>
 

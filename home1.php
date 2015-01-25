@@ -52,7 +52,7 @@ include('signupindex.php');
 
       <div class="row">
         <div id="first-node" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div  data-toggle="modal" data-target=""><img id="sponsors" class="level1" src="svg/sponsors.svg"/></div>
+          <div  data-toggle="modal" data-target=".sponsors"><img id="sponsors" class="level1" src="svg/sponsors.svg"/></div>
           <div  ><img id="events" class="level1" src="svg/events.svg"/></div>
           <div  ><img id="workshop" class="level1" src="svg/workshops.svg"/></div>
           <div  data-toggle="modal" data-target=".contacts"><img id="contacts" class="level1" src="svg/contacts.svg"/></div>
