@@ -88,9 +88,9 @@ margin-top:30px;
     <div class="img-responsive img-rounded" style="display: inline-block;padding-top:30px;">
       <a href="http://www.btechjosh.com/" target="_blank"><img  src="sponsors/btechjosh.png"/></a>
     </div>
-    <div class="img-responsive img-rounded" style="padding-top:10px;">
+    <!-- <div class="img-responsive img-rounded" style="padding-top:10px;">
       <a href="http://www.codechef.com/" target="_blank"><img  src="sponsors/codechef.png"/></a>
-    </div>
+    </div> -->
     <div class="img-responsive img-rounded" style="padding-top:30px;">
       <a href="https://www.reload.in/" target="_blank"><img  src="sponsors/reload.png"/></a>
     </div>
