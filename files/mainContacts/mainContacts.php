@@ -100,7 +100,7 @@ margin-top:30px;
     <div class="img-responsive img-rounded" style="padding-top:20px;">
       <img  src="sponsors/new_temp_trans.png"/>
     </div>
-    <div class="img-responsive img-rounded" style="padding-top:10px;">
+    <div class="img-responsive img-rounded" style="">
       <a href="http://www.lg.com/in" target="_blank"><img  src="sponsors/lg.jpg"/></a>
     </div>
     <!-- <div class="img-responsive img-rounded" style="padding-top:30px;">
