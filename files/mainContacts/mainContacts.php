@@ -133,6 +133,7 @@ margin-top:30px;
     <div>Accomodation Registration Started.</div>
     <div>WebProjectX -(online) Problem Statements are published.</div>
     <div>Antagon - Problem Statement is published.</div>
+    <div>Ethical Hacking registration ends on 29/1/2015.</div>
     <!-- <div>
       
     </div>
