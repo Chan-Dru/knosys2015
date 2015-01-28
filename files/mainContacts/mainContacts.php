@@ -106,6 +106,15 @@ margin-top:30px;
     <div class="img-responsive img-rounded" style="">
       <a href="https://netbanking.canarabank.in/entry/ENULogin.jsp" targer="_blank"><img  src="sponsors/canarabank.jpg"/></a>
     </div>
+    <div class="img-responsive img-rounded" style="">
+      <a href="http://line.me/en/" target="_blank"><img  src="sponsors/line.jpg"/></a>
+    </div>
+    <div class="img-responsive img-rounded" style="">
+      <a href="http://www.ebay.in/" target="_blank"><img  src="sponsors/ebay.png"/></a>
+    </div>
+    <div class="img-responsive img-rounded" style="">
+      <a href="https://www.onlinesbi.com/" target="_blank"><img  src="sponsors/sbi.jpg"/></a>
+    </div>
     <!-- <div class="img-responsive img-rounded" style="padding-top:30px;">
       <img  src="sponsors/greentrendz_logo.png"/>
     </div> -->
