@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
 	$stmt->execute();
 	$result=$stmt->fetchAll();
 	if($result == NULL)
-		echo '<div class="alert alert-danger" style="color:red;font-size:30px;>User has not registered for Knosys</div>';
+		echo '<div class="alert alert-danger" style="color:red;font-size:30px;">'.$kid.' User has not registered for Knosys</div>';
 	else{
 		header("Location:data.php");	
 		$_SESSION['kid']=$kid;
