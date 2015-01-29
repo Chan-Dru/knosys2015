@@ -36,7 +36,7 @@ if(isset($_POST['submit'])){
 					<form action='' method='POST'>
 					<fieldset style='background-color:lightblue'>
 						<legend><h4><b>Status:</b></h4></legend>
-						Knosys ID:<input value='KS150' type='text' name='kid'><br><br>
+						Knosys ID:<input  type='text' name='kid'><br><br>
 						<strong><center>or</center></strong><br>
 						User Name:<input type='text' name='username'><br><br>
 						<button type='submit' class='btn btn info' name='submit' >Submit</button>
