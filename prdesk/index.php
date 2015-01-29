@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
 	session_start();
 	$kid=$_POST['kid'];
 	$username=$_POST['username'];
-	$stmt=$db->prepare("SELECT * FROM regis WHERE k_id= '$kid' ");
+	$stmt=$db->prepare("SELECT * FROM regis WHERE k_id= '$kid' or user_name ='$username' ");
 	$stmt->execute();
 	$result=$stmt->fetchAll();
 	if($result == NULL)

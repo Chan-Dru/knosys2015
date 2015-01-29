@@ -10,13 +10,12 @@ $username=$_SESSION['username'];
 ?>
 <head>
 
-
 </head>
 
 
 <body style='background-color:#006666'>
 	<div class='conatiner-fluid'>
-		 <div style='position:absolute;top:30px;right:200px'><button class='btn btn primary' onClick="location.href='index.php'">Back</button></div>	
+		 <div style='position:absolute;top:30px;left:200px'><button class='btn btn primary' onClick="location.href='index.php'">Back</button></div>	
 		<center>
 	<h3 style='color:black'><b>PR DESK:</b></h3>
 </center>
