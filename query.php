@@ -77,7 +77,7 @@ document.getElementById(id).style.display = visibility;
       </div></br>
        <a type="button" class="btn " style='background-color=lightblue' data-toggle="collapse" data-target="#t1q2"><h4>When is Knosys going to be held?</h4></a>
       <div id="t1q2" class="collapse"><b>
-        Knosys 2015 is scheduled to be held on 01 February,2015. Although worksops start from 31 January,2015. </b>
+        Knosys 2015 is scheduled to be held on 01 February,2015. Although worksops start from 30 January,2015. </b>
       </div></br>
        
       
@@ -129,7 +129,7 @@ document.getElementById(id).style.display = visibility;
       </div></br>
       <a type="button" class="btn" data-toggle="collapse" data-target="#t3q4"><h4>Where do I get my Knosys ID from?</h4></a>
       <div id="t3q4" class="collapse ">
-       <b> Once you <b><b><b>sign up through the Knosys website, your Knosys ID (PID) will be generated automatically.</b>
+       <b> Once you <b><b><b>sign up through the Knosys website, your Knosys ID (KID) will be generated automatically.</b>
       </div></br>
 
 
@@ -172,7 +172,7 @@ document.getElementById(id).style.display = visibility;
       <a type="button" class="btn" data-toggle="collapse" data-target="#t5q2"><h4>How is accommodation provided ?</h4></a>
       <div id="t5q2" class="collapse ">
        <b> Accommodation to outstation participants will be provided if they have applied for accommodation on the Knosys website and their accommodation has been approved by us. You will be accommodated in the various Boys and Girls hostels. We will be providing essential commodities like mattresses and pillows. 
-The participants who have not been confirmed for accommodation are requested to arrange for their stay outside the Institute in Hotels or lodges. A list of Hotels and lodges in karaikal has been provided on the website.</b>
+The participants who have not been confirmed for accommodation are requested to arrange for their stay outside the Institute in Hotels or lodges.</b>
       </div></br>
       <a type="button" class="btn" data-toggle="collapse" data-target="#t5q3"><h4>Will all the team members be given accommodation at the same place ?</h4></a>
       <div id="t5q3" class="collapse ">
@@ -186,7 +186,7 @@ The participants who have not been confirmed for accommodation are requested to 
       <div id="t5q5" class="collapse ">
        <b>No, the members of your team who have not been provided accommodation cannot stay in your allotted rooms. They are requested to stay at nearby hotels or lodges outside the campus.</b>
      </div></br>
-     <a type="button" class="btn" data-toggle="collapse" data-target="#t5q6"><h4>What about the eating facilities ?</h4></a>
+     <a type="button" class="btn" data-toggle="collapse" data-target="#t5q6"><h4>What about the catering facilities ?</h4></a>
       <div id="t5q6" class="collapse ">
        <b>A variety of food stalls shall be set up in the heart of the festive area which will cater to all your food requirements.
 You can also avail the NIT-Py mess at a minimal amount.</b>

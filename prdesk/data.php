@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+<?php
+include('register_connection.php');
+session_start();
+$kid=$_SESSION['kid']; 
+$username=$_SESSION['username'];
+
+
+?>
 <head>
 <link rel='stylesheet' href='css/bootstrap.css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -9,15 +17,10 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 </head>
-<?php
-include('register_connection.php');
-session_start();
-$kid=$_SESSION['kid']; 
-$username=$_SESSION['username'];
-?>
+
 
 <body style='background-color:#006666'>
 	<div class='conatiner-fluid'>
@@ -95,7 +98,8 @@ echo"
 		</div>
 </div>
 
-<div style='position:absolute;top:120px;left:60px;background-color:lightgrey;width:350px;height:200px'>
+<div id="report"></div>
+<div style='position:absolute;top:120px;left:60px;background-color:lightgrey;width:350px;height:300px'>
 			<center>
 
 				<div>
@@ -147,7 +151,7 @@ echo"
 				</div>
 			</center>
 		</div>
-		<div style='position:absolute;top:240px;left:50px;background-color:lightgrey'>
+		<div style='position:absolute;top:400px;left:50px;background-color:lightgrey'>
 			<center>
 				<h3><b>Accomodation:</b></h3>
 				<?php
@@ -165,6 +169,35 @@ echo"
 						
 				</center>
 		</div>
+
+<div id="checkedin" style="color:blue;background-color:">
+	<form action='' method='POST'>
+<button type="submit" name='not'>Revert</button>
+<button type="submit" name='yes'>Checked In</button>
+</form>
+
+</div>
+
+<?php 
+
+if(isset($_POST['not']))
+{
+	$db->exec("UPDATE regis SET checked='false' WHERE k_id='$kid'");
+	echo '<div id="report" style="color:red; font-size:24px;">changes reverted</div>';
+}
+if(isset($_POST['yes'])){
+	$db->exec("UPDATE regis SET checked='true' WHERE k_id='$kid' "); 
+	echo '<div id="report" style="color:green; font-size:24px;">checked IN</div>';
+}
+
+?>
+
+
+
+
+
+</div>
+
 
 	</div>
 </body>
