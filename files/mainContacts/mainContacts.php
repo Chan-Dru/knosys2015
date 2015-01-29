@@ -118,6 +118,9 @@ margin-top:30px;
     <div class="img-responsive img-rounded" style="">
       <a href="" target=""><img  src="sponsors/everbright.png"/></a>
     </div>
+    <div class="img-responsive img-rounded" style="">
+      <a href="" target=""><img  src="sponsors/wink.png"/></a>
+    </div>
     <!-- <div class="img-responsive img-rounded" style="padding-top:30px;">
       <img  src="sponsors/greentrendz_logo.png"/>
     </div> -->

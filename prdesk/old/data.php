@@ -64,7 +64,7 @@ $username=$_SESSION['username'];
 
 
 //include('register_connect.php');
-$stmt=$db->prepare("SELECT * FROM  event_regis  WHERE user_name='$username' or kid='$kid' ");
+$stmt=$db->prepare("SELECT * FROM  event_regis  WHERE kid='$kid' or user_name='$username'");
 $stmt->execute();
 $result=$stmt->fetchAll();
 $i=0;
@@ -108,7 +108,7 @@ echo"
 					</center>
 					<?php 
 					
-					$stmt=$db->prepare("SELECT * FROM regis WHERE user_name='$username' or  k_id='$kid' ");
+					$stmt=$db->prepare("SELECT * FROM regis WHERE k_id='$kid' or user_name='$username'");
 					$stmt->execute();
 					while($row=$stmt->fetch()){
 						$kid=$row['k_id'];
