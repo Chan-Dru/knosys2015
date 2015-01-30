@@ -129,14 +129,13 @@ margin-top:30px;
 
 
   <div class="notification">
-    <div style="display: inline-block;">Event Registration has  started.
-    </div>
-    <div>Selected Teams for ITyuktha <a href="ITyukthaSelectionList.pdf">ITyukthaTeams</a></div>
+    <div style="display: inline-block;">Selected Teams for ITyuktha <a href="ITyukthaSelectionList.pdf">ITyukthaTeams</a></div>
     <div>Sponsorship window is now open.Contact Ranjith 9488567044.
     </div>
     <div>Accomodation Closed.</div>
     <div>WebProjectX -(online) Problem Statements are published.</div>
     <div>Antagon - Problem Statement is published.</div>
+    <div>Online Registration Closed.</div>
     <!-- <div>
       
     </div>
