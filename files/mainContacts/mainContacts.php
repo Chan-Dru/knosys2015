@@ -134,7 +134,7 @@ margin-top:30px;
     <div>Selected Teams for ITyuktha <a href="ITyukthaSelectionList.pdf">ITyukthaTeams</a></div>
     <div>Sponsorship window is now open.Contact Ranjith 9488567044.
     </div>
-    <div>Accomodation Registration Started.</div>
+    <div>Accomodation Closed.</div>
     <div>WebProjectX -(online) Problem Statements are published.</div>
     <div>Antagon - Problem Statement is published.</div>
     <!-- <div>

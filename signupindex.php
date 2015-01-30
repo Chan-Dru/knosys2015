@@ -246,13 +246,7 @@ if(team_name==""){
    <?php if(isset($_SESSION['user_id'])){
    
     echo "<div id='after_login'><a href='logout.php' id='logout'><img class='menu-button col-lg-1' src='pins/logout.png'/></a>Hi,".$_SESSION['user_name']." (".$_SESSION['user_id'].")</div>";
-  ?>
-<script>
-$(document).ready(function(){
-$('.accomodation-button').css('display','block');
-});
-</script>
-<?php }else {?>
+  }else {?>
   <div id="after_login">
 
   <img data-toggle="modal" data-target=".signup" class="before_login menu-button col-lg-1"src="pins/register.png"/>
