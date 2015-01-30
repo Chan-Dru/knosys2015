@@ -24,9 +24,17 @@ height:50px;
 margin-top:30px;
 }
 
+#schedule{
+  position:absolute;
+  top:100px;
+  right:20px;
+  color:white;
+}
 
 
 </style>
+
+<div id="schedule"><b>Events Schedule for February,1,2015 : <a href="ScheduleFeb1st.pdf" target="_blank">Schedule</a></b></div>
 
 <div id="faq"><a href="query.php" target="_blank">FAQ</a></div>
 
@@ -136,6 +144,7 @@ margin-top:30px;
     <div>WebProjectX -(online) Problem Statements are published.</div>
     <div>Antagon - Problem Statement is published.</div>
     <div>Online Registration Closed.</div>
+    <div><b>MOZILLA GUEST TALK on January,31,2015 - 2.00 pm.</b></div>
     <!-- <div>
       
     </div>
