@@ -34,7 +34,7 @@ margin-top:30px;
 
 </style>
 
-<div id="schedule"><b>Events Schedule for February,1,2015 : <a href="ScheduleFeb1st.pdf" target="_blank">Schedule</a></b></div>
+
 
 <div id="faq"><a href="query.php" target="_blank">FAQ</a></div>
 
@@ -141,6 +141,7 @@ margin-top:30px;
     <div>Sponsorship window is now open.Contact Ranjith 9488567044.
     </div>
     <div>Accomodation Closed.</div>
+    <div><b>Events Schedule for February,1,2015 : <a href="ScheduleFeb1st.pdf" target="_blank">Schedule</a></b></div>
     <div>WebProjectX -(online) Problem Statements are published.</div>
     <div>Antagon - Problem Statement is published.</div>
     <div>Online Registration Closed.</div>
