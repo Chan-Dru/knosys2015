@@ -69,13 +69,7 @@ margin-top:30px;
 
   <div class="accomodation-button"><a target="_blank" href="accomodation.php" ><img  class="accomodation-img" src="pins/accomodation.png" /></a></div>
 <?php if(isset($_SESSION['user_id'])&&isset($_SESSION['knosys'])) {?>
-    <form  action="http://cobweb.knosys.in/index.php" method="POST">
-  <input type="hidden" value='<?php echo $_SESSION["user_id"];?>' name="user_id" />
-  <input type="hidden" value='<?php echo $_SESSION["knosys"];?>' name="knosys" />
-  <input type="hidden" value='<?php echo $_SESSION["user_name"];?>' name="username" />
 
-<input class="treasure-button "  type="image" alt='submit' class="btn-sm btn"  src="pins/treasure.png"/>
-</form>
 <?php } ?>
 
 
@@ -145,7 +139,6 @@ margin-top:30px;
     <div>WebProjectX -(online) Problem Statements are published.</div>
     <div>Antagon - Problem Statement is published.</div>
     <div>Online Registration Closed.</div>
-    <div><b>MOZILLA GUEST TALK on January,31,2015 - 2.00 pm.</b></div>
     <!-- <div>
       
     </div>
