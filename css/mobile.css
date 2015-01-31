@@ -5,13 +5,29 @@
   width:22%;
 }
 
-..col-xs-4{
+.col-xs-4{
   width:30%;
 }
 
 .notification {
-display:none;
+  width: 200px;
+  /*height: 50px;*/
+  background-color:;
+  margin: 0 auto;
+  color:white;
+  text-align: center;
+   position: absolute;
+   top:140px;
+   right:0px;
 }
+
+.notification div{
+  width:100%;
+  height:60px;
+  display:inline-block;
+  display:none;
+}
+
 .slider {
 display:none;
 }
@@ -32,7 +48,9 @@ display:none;
 
 
 
-
+#top{
+	height:80px;
+}
 .container-fluid{
   /*width:100%;*/
   margin:0px;
@@ -50,9 +68,7 @@ body{
   overflow:hidden;
 }
 
-#top{
-  height:10px;
-}
+
 div{
   border:0px solid black;
 }
