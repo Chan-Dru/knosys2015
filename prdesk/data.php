@@ -173,11 +173,11 @@ echo"
 
 if(isset($_POST['not']))
 {
-	$db->exec("UPDATE regis SET checked='false' WHERE k_id='$kid'");
+	$db->exec("UPDATE regis SET eventchecked='false' WHERE k_id='$kid'");
 	echo '<div id="report" style="color:red; font-size:24px;">changes reverted</div>';
 }
 if(isset($_POST['yes'])){
-	$db->exec("UPDATE regis SET checked='true' WHERE k_id='$kid' "); 
+	$db->exec("UPDATE regis SET eventchecked='true' WHERE k_id='$kid' "); 
 	echo '<div id="report" style="color:green; font-size:24px;">checked IN</div>';
 }
 
