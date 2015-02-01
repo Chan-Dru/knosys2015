@@ -155,7 +155,7 @@ document.getElementById(id).style.display = visibility;
       </div></br>
       <a type="button" class="btn " data-toggle="collapse" data-target="#t4q4"><h4>Do I get a certificate for participation?</h4></a>
       <div id="t4q4" class="collapse ">
-      <b> Yes, participation certificates will be provided for most events. Online and ChillPill will provide  certificates only
+      <b> No, participation certificates will be provided only for ITyuktha. Online and ChillPill will provide  certificates only
  to winners.</b>
  
       </div></br>
